@@ -1,0 +1,66 @@
+.App {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.post-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.post-detail {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.post-list-container {
+  max-height: 100%;
+}
+
+.post-list-item {
+  cursor: pointer;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+}
+
+.post-list-item:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.02);
+}
+
+.post-list-item.target {
+  background-color: #e0f7fa;
+  border-color: #00bcd4;
+}
+
+.post-detail-content,
+.post-detail-comments {
+  margin-bottom: 20px;
+}
+
+.comment {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 8px 0;
+  background-color: #f9f9f9;
+}
+
+.comment-email {
+  font-weight: bold;
+  color: #333;
+}
+
+.comment-body {
+  color: #555;
+}
